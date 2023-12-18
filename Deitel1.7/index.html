@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Deitel 1.7</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .format {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<span class="format"></span>
+
+<body>
+    <h4>1.7) Explique as duas fases de compilação de programas Java.</h4>
+
+
+    <p>A primeira fase de compilação do programa java, ocorre quando utilizamos o comando javac. Ao utilizarmos esse
+        comando, o código fonte .java é compilado para bytecodes .class. A segunda fase ocorre quando chamamamos o
+        programa java com o comando java. Na fase de execução esse comando vai pegar o bytecodes e compilar o código
+        para a linguagem de máquina do SO que está chamando.</p>
+    <hr>
+    <h4>1.8) Um dos objetos mais comuns do mundo é um relógio de pulso. Discuta como cada um dos seguintes termos e
+        conceitos se aplicam à noção de um relógio: objeto, atributos, comportamentos, classe, herança (considere, por
+        exemplo, o alarme dele), modelagem, mensagens,
+        encapsulamento, interface e ocultamento de informações.</h4>
+
+    <p>Objeto) Podemos ter uma classe Relógio e criar diversos relógios instanciando essa classe. Exemplo: Relogio
+        relogio1 = new Relogio().</p>
+    <p>Atributos) A classe relógio pode ter diversos atributos como: formato do relógio, tipo do relógio, horário atual,
+        etc...</p>
+    <p>Comportamentos) Podemos ter métodos para o relógio. Exemplo: alterar horário, alterar brilho, etc... </p>
+    <p>Classe) Podemos criar uma classe para o relógio, como se fosse um modelo. A partir da classe, podemos criar
+        vários relógios com instâncias.</p>
+    <p>Herança) Podemos criar outra classe que tenha mais atributos ou metódos que um relógio comum. Por exemplo, um
+        relógio que tenha alarme. Podemos aproveitar tudo do relógio comum e apenas adicionar o alarme na nova classe
+        extendendo a classe pai.
+    </p>
+    <p>Modelagem) Podemos usar a UML para modelar as classes.</p>
+    <p>Mensagem) O envio de uma mensagem a um objeto faz o método
+        correspondente ser executado.</p>
+    <p>Encapsulamento) Podemos deixar os atributos como privados, encapsulando o mesmo. Assim, para acessar ou modificar
+        os atributos, precisamos criar gets e setters.</p>
+    <p>Interface) Podemos criar interfaces para determidas classes seguirem regras pré-definidas.</p>
+    <p>Ocultamento de informações) Podemos deixar os atributos privado, assim ocultando informações para outras classes.
+    </p>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Deitel 3.5 3.6 3.7 3.8 3.9 3.10</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .format {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<span class="format"></span>
+
+<body>
+    <h4>3.5 (Palavra-chave new) Qual é o objetivo da palavra-chave new? Explique o que acontece quando você a utiliza.
+    </h4>
+    <p>O objetivo da palavra new é criar uma referência de memória. Além disso, inicializar as variavéis de instâncias
+        que a classe possue.</p>
+    <h4>3.6 (Construtores padrão) O que é um construtor padrão? Como as variáveis de instância de um objeto são
+        inicializadas se uma classe tiver
+        somente um construtor padrão?</h4>
+    <p>Um construtor padrão serve para criar um objeto de determinada classe. As variáveis de instâncias são
+        inicializadas com 0 se forem do tipo primitivo e null se forem do tipo referência.</p>
+    <h4>3.7 (Variáveis de instância) Explique o propósito de uma variável de instância.</h4>
+    <p>O próposito das variáveis de instância é guarda valores para determinados objetos. Quando criamos uma classe,
+        podemos declarar variáveis de instâncias e instânciar objetos, sendo que, os objetos terão cópias das variáveis
+        de instâncias.</p>
+    <h4>3.8 (Usando classes sem importá-las) A maioria das classes precisa ser importada antes de ser usada em um
+        aplicativo. Por que cada aplicativo pode utilizar as classes System e String sem importá-las antes?</h4>
+    <p>O java possue o pacote java.lang que é importado implicitamentes em todas as classes. Sendo que, as classes
+        System e String fazem parte desse pacote.</p>
+    <h4>3.9 (Usando uma classe sem importá-la) Explique como um programa pode usar a classe Scanner sem importá-la.</h4>
+    <p>O programa pode utilizar o nome de classe totalmente qualificado. Exemplo: java.util.Scanner input = new
+        java.util.Scanner(System.in); Sendo assim, não vai ser necessário o import da classe Scanner.</p>
+    <h4>3.10 (Métodos set e get) Explique por que uma classe pode fornecer um método set e um método get para uma
+        variável de instância</h4>
+    <p>Para maior seguraça das variáveis de instâncias, podemos utilizar o modificador de acesso private. Sendo assim,
+        podemos limitar se queremos expor essa variável. Para conseguirmos acessar ou modificar essas variáveis
+        utilizamos o set e get.</p>
+
+</body>
+
+</html>
