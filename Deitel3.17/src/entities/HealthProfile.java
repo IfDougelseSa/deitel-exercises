@@ -121,11 +121,11 @@ public class HealthProfile {
 
 		if (bmi < 18.5) {
 			return "Thiness | obesity degree 0";
-		} else if (bmi >= 18.5 && bmi <= 24.9)
+		} else if (bmi <= 24.9)
 			return "Normal | obesity degree 0";
-		else if (bmi >= 25.0 && bmi <= 29.9)
+		else if (bmi <= 29.9)
 			return "Overweight | obesity degree 1";
-		else if (bmi >= 30.0 && bmi <= 39.9)
+		else if (bmi <= 39.9)
 			return "Obesity | obesity degree 2";
 		else
 			return "Severe obesity | obesity degree 3";

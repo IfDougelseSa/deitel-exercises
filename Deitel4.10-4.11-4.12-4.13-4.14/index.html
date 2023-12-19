@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Deitel 4.10 4.11 4.12 4.13 4.14</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .format {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>4.10 Compare e contraste a instrução de seleção única if e a instrução de repetição while. Qual é a semelhança
+        dessas duas instruções? Qual
+        é a diferença?</h4>
+    <p>A semelhança é que para entrar nas duas instruções é necessário a condição boleana ser true. A diferença é que a
+        if vai executar o código em seu corpo apenas uma vez e a while vai executar várias vezes até a condição se torna
+        false (supondo que seja true).</p>
+    <h4>4.11 Explique o que acontece quando um programa Java tenta dividir um inteiro por outro. O que acontece para a
+        parte fracionária do cálculo?
+        Como você pode evitar esse resultado?</h4>
+    <p>O valor sera um inteiro e a parte fracionária do cálculo será truncada (perderá o valor decimal). Para evitar
+        esse resultado podemos utilizar o operador de coersão unário para converter algum dos valores para double. Como
+        o Java apenas faz cálculos com números do mesmo tipo, ao usar o operador de coersão, automaticamente o outro
+        valor vai ser promovido para que a conta possa ser realizada.</p>
+    <h4>4.12 Descreva as duas maneiras como as instruções de controle podem ser combinadas.</h4>
+    <p>Podem ser combinadas com empilhamento ou aninhadas.</p>
+    <h4>4.13 Que tipo de repetição seria apropriado para calcular a soma dos primeiros 100 inteiros positivos? Que tipo
+        seria apropriado para calcular
+        a soma de um número arbitrário de inteiros positivos? Descreva brevemente como cada uma dessas tarefas poderia
+        ser realizada.</h4>
+    <p>Repetição definida e repetição controlada por sentinela. Na primeira, podemos definir uma váriavel contadora e
+        dentro da verificação do while colocar o numero desejado para finalizar o mesmo. Na segunda, podemos utilizar um
+        valor sentinela na verificação do while que seja diferente dos valores de necesários de entrada. Com isso,
+        quando o usuário quiser para a o looping, basta apenas digitar o valor sentinela.</p>
+    <h4>4.14 Qual é a diferença entre pré-incrementar e pós-incrementar uma variável?</h4>
+    <p>O pré-incrementar vai adicionar um valor para váriavel e exibir esse valor ja adicionado. O pós-incrementar vai
+        mostrar o valor da váriavel e depois adicionar 1 para ela.</p>
+</body>
+
+</html>
