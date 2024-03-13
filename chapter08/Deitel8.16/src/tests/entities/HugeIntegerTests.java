@@ -1,4 +1,4 @@
-package entities.tests;
+package tests.entities;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotNull;
