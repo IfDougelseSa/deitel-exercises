@@ -9,3 +9,7 @@ Control instructions: part 1; assignment operators ++ and --</a></p>
 <p>Capitulo 6 / Chapter 6 - <a href="https://github.com/IfDougelseSa/exercises-deitel/tree/main/chapter06">Métodos: um exame mais profundo | 
 Methods: a deeper look</a></p>
 <p>Capitulo 7 / Chapter 7 - <a href="https://github.com/IfDougelseSa/exercises-deitel/tree/main/chapter07">Arrays e ArrayLists | Arrays and ArrayLists</a></p>
+<p>Capitulo 8 / Chapter 8 - <a href="https://github.com/IfDougelseSa/exercises-deitel/tree/main/chapter08">Classes e objetos: um exame
+mais profundo | 
+Classes and objects: an examination
+deeper</a></p>

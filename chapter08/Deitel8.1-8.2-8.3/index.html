@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Deitel 8.1 8.2 8.3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .format {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<span class="format"></span>
+
+<body>
+    <h4>8.1 Preencha as lacunas em cada uma das seguintes afirmações:</h4>
+    <p>a) Um(a) <span class="format">import static sob demanda</span> importa todos os membros static de uma classe.</p>
+    <p>b) O método static da classe String <span class="format">Format</span> é semelhante ao método System.out.printf,
+        mas retorna uma String
+        formatada em vez de exibir uma String em uma janela de comando.</p>
+    <p>c) Se um método contiver uma variável local com o mesmo nome de um dos campos da sua classe, a variável local
+        <span class="format">espelha</span> o campo
+        no escopo desse método.
+    </p>
+    <p>d) Os métodos public de uma classe também são conhecidos como <span class="format">serviços public</span> ou
+        <span class="format">interface pulic</span> da classe.
+    </p>
+    <p>e) Uma declaração de <span class="format">importação de tipo único</span> especifica uma classe a ser importada.
+    </p>
+    <p>f) Se uma classe declarar construtores, o compilador não criará um(a) <span class="format">construtor
+            padrão</span>.</p>
+    <p>g) O método <span class="format">toString()</span> de um objeto é chamado implicitamente quando um objeto aparece
+        no código em que uma String é necessária.</p>
+    <p>h) Métodos get são comumente chamados de <span class="format">métodos acessores</span> ou <span
+            class="format">métodos de consulta</span>.</p>
+    <p>i) Um método <span class="format">predicado</span> testa se uma condição é verdadeira ou falsa.</p>
+    <p>j) Para cada enum, o compilador gera um método static chamado <span class="format">values</span>, que retorna um
+        array
+        das constantes do enum na ordem
+        em que elas foram declaradas.</p>
+    <p>k) A composição às vezes é referida como um relacionamento <span class="format">tem um</span>.</p>
+    <p>l) Uma declaração de <span class="format">enum</span>contém uma lista separada por vírgulas de constantes</p>
+    <p>m) Uma variável <span class="format">static</span> representa as informações de escopo de classe que são
+        compartilhadas por todos os objetos da classe.</p>
+    <p>n) Uma declaração <span class="format">importação static única</span> importa um membro static</p>
+    <p>o) O <span class="format">princípio do menor privilégio</span> declara que só deve ser concedida ao código a
+        quantidade de privilégio e acesso
+        que ele precisa para realizar sua tarefa
+        designada.</p>
+    <p>p) A palavra-chave <span class="format">final</span> especifica que uma variável não é modificável depois da
+        inicialização em uma declaração ou em um construtor</p>
+    <p>q) Uma declaração <span class="format">sob demanda</span> importa somente as classes que o programa utiliza em um
+        pacote em
+        particular.</p>
+    <p>r) Métodos set são comumente chamados <span class="format">métodos modificadores</span> porque eles geralmente
+        alteram um valor.</p>
+    <p>s) Use a classe <span class="format">BigDecimal</span> para realizar cálculos monetários precisos.</p>
+    <p>t) Use a instrução <span class="format">throw</span> para indicar que ocorreu um problema.</p>
+
+    <h4>8.2 (Com base na Seção 8.14) Explique a noção de acesso a pacotes no Java. Explique os aspectos negativos do
+        acesso de pacote.</h4>
+    <p>Quando temos várias classes no mesmo pacote, se não definirmos algum modificador de acesso, o padrão será o
+        acesso de pacote. Com esse modificador, quando criamos um objeto em outra classe, podemos mudar os valores dos
+        membros que possuem o acesso de pacote na outra classe. Isto é ruim pois a lógica fica acessível para outras
+        classes no mesmo pacote livremente.</p>
+    <h4>8.3 O que acontece quando um tipo de retorno, mesmo void, é especificado para um construtor?</h4>
+    <p>Erro de compilação</p>
+</body>
+
+</html>
