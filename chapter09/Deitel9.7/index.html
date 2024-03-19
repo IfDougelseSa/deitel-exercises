@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Deitel 9.7</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .format {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<span class="format"></span>
+
+<body>
+    <h4>9.7 (protected versus private) Alguns programadores preferem não utilizar acesso protected, porque acreditam que
+        ele quebra o
+        encapsulamento da superclasse. Discuta os méritos relativos de usar acesso protected versus acesso private em
+        superclasses</h4>
+    <p>Para uma boa engenharia de software, o correto é usar private para variáveis. O modificador de acesso protected
+        faz com que as
+        subclasses e todas as classes no mesmo pacote tenham acesso ao seus atributos e métodos. Com isso, a proteção
+        diminui porque qualquer classe que não for relacionada e estiver no mesmo pacote pode alterar os valores. Além
+        disso, o código fica mais propício a erros, porque se alguma classe alterar essa variável e ela tiver uma lógica
+        para não aceitar determinados valores, o valor será alterado causando uma inconsistência. Além disso, fica mais
+        custoso a manutenção, pois casa haja alguma alteração na classe principal, como mudar o nome de uma váriavel
+        protected, será necessário mudar todas as classes que acessam essa váriavel diretamente. O ideal é usar private
+        nas variáveis e usar os métodos gets e setters nas váriaveis que herdam, com isso, a alteração apenas ocorrerá
+        na classe principal.</p>
+    <p>Para os métodos, caso não seja um método para o cliente, é uma boa ideia usar o protected em vez do public. Com
+        isso, as classes herdadas conseguem acessar os métodos e outras classes que não precisam saber da lógica de
+        diferentes pacotes não
+        conseguirão acessá-los.</p>
+
+</body>
+
+</html>

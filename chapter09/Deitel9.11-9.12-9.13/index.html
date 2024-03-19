@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Deitel 9.11 9.12 9.13</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+
+<body>
+    <h4>9.11 (Usando super no corpo de um construtor) Explique por que você usaria super na primeira instrução do corpo
+        de um construtor de
+        uma subclasse.</h4>
+    <p>Quando extendemos uma classe e a super classe tem apenas construtores com argumentos é necessário usar super na
+        primeira linha do construtor da subclasse para inicializar as variáveis da super classe. A palavra super tem que
+        ser o primeiro comando dentro do construtor da subclasse. Além disso, caso o construtor da super classe seja
+        padrão e não utilizarmos a palavra super no construtor da subclasse, o compilador implicitamente usa o super
+        para iniciar o construtor padrão da super classe.</p>
+
+    <h4>9.12 (Usando super no corpo de um método de instância) Explique por que você usaria super no corpo de um método
+        de instância de
+        uma subclasse.</h4>
+    <p>Utilizamos super no método de instância de uma subclasse para reaproveitar a lógica da superclasse e não precisar
+        escrever o código novamente. Além disso, é uma boa prática. Caso seja necessário mudar a lógica do método da
+        super classe, será necessário mudar apenas uma vez o código, ficando menos propenso a erros e enxutando o
+        código.</p>
+
+    <h4>9.13 (Chamando métodos get no corpo de uma classe) Nas figuras 9.10 e 9.11, os métodos earnings e toString
+        chamam vários métodos get dentro da mesma classe. Explique os benefícios de chamar esses métodos get dentro das
+        classes.</h4>
+    <p>Os benefícios de usar métodos get dentro da mesma classe é que se for preciso alterar algum atributo, será
+        necessário apenas alterar os métodos get. Com isso, todos os métodos da classe ou das sub classes que utilizam o
+        método get, não será necessário fazer alteração. Sendo assim, a manutenção do código fica mais fácil.</p>
+
+</body>
+
+</html>
