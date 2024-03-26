@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Deitel 10.1 10.2 10.3 10.4 10.5 10.6 10.7 10.8 10.9 10.10 10.11</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .format {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h4>10.1 Preencha as lacunas em cada uma das seguintes afirmações:</h4>
+    <p>a) Se uma classe contiver pelo menos um método abstrato, ela será uma classe <span
+            class="format">abstrata</span>.</p>
+    <p>b) As classes a partir das quais os objetos podem ser instanciados são chamadas <span
+            class="format">concretas</span>.</p>
+    <p>c) <span class="format">Polimorfismo</span> envolve a utilização de uma variável de superclasse para invocar
+        métodos nos
+        objetos de superclasse e
+        de subclasse, permitindo que você “programe no geral”.</p>
+    <p>d) Os métodos que não são métodos de interface e que não fornecem implementações devem ser declarados com a
+        palavra-chave
+        <span class="format">abstract</span>.
+    </p>
+    <p>e) Fazer uma coerção em uma referência armazenada em uma variável da superclasse para um tipo de subclasse é
+        chamado <span class="format">downcasting</span>.</p>
+    <h4>10.2 Determine se cada uma das instruções a seguir é verdadeira ou falsa. Se falsa, explique por quê.</h4>
+    <p>a) Todos os métodos em uma classe abstract devem ser declarados como métodos abstract. (F) Uma classe abstrata
+        pode incluir métodos com implementações.</p>
+    <p>b) Não é permitido invocar um método “somente de subclasse” por meio de uma variável de subclasse.(F) Se a
+        variável for da subclasse e a referência também, é possível invocar o método da subclasse.</p>
+    <p>c) Se uma superclasse declarar um método como abstract, uma subclasse deverá implementar esse método.(F) Se a
+        subclasse for abstract também, não será necessário implementar o método. Sendo assim, apenas uma subclasse
+        concreta deve implementar o método.</p>
+    <p>d) Um objeto de uma classe que implementa uma interface pode ser pensado como um objeto desse tipo de interface.
+        (V)
+    </p>
+    <h4>10.3 (Interfaces Java SE 8) Preencha os espaços em branco em cada uma das seguintes instruções:</h4>
+    <p>a) No Java SE 8, uma interface pode declarar <span class="format">métodos default</span>, isto é, métodos public
+        com
+        implementações concretas que especificam como
+        uma operação deve ser realizada.</p>
+    <p>b) A partir do Java SE 8, as interfaces agora podem incluir métodos auxiliares <span class="format">public
+            static</span>.</p>
+    <p>c) A partir do Java SE 8, qualquer interface que contém um único método é conhecida como <span
+            class="format">interface funcional</span>.</p>
+
+    <h4>10.4 Como o polimorfismo permite programar “no geral” em vez de “no específico”? Discuta as vantagens cruciais
+        da programação “no geral”.</h4>
+    <p>Com o polimorfismo é possível criar sub classes que herdam da super classe e atribuir intefaces. Com isso, caso
+        tenhamos objetos de diferentes sub classes mas que herdam a mesma classe, podemos atribui-los a uma variável da
+        super classe e conseguir manipular todos. Além disso, com as interfaces conseguimos fazer a mesma coisa. Caso
+        tenhamos duas classes totalmente diferentes, mas com a mesma interface, é possível atribuir a variável da
+        interface e a referência das classes, conseguindo assim, manipula-las. </p>
+    <h4>10.5 O que são métodos abstratos? Descreva as circunstâncias em que um método abstrato seria apropriado.</h4>
+    <p>Métodos abstratos são métodos que não possuem implementação, sendo assim, a classe concreta deve implementa-lo.
+        São apropriados quando temos uma classe genérica e diversas classes concretas diferentes, mas com a mesma
+        ação.</p>
+    <h4>10.6 Como o polimorfismo promove extensibilidade?</h4>
+    <p>Promove a extensibilidade porque é possível adicionar novas subclasses com o comportamento da super classe.</p>
+    <h4>10.7 Discuta três maneiras como você pode atribuir referências de superclasse e de subclasse a variáveis de
+        superclasse e a tipos de subclasse.</h4>
+    <p>superclasse - superclasse | subclasse - subclasse | superclasse - subclasse.</p>
+    <h4>10.8 Compare e contraste classes abstratas e interfaces. Por que você utilizaria uma classe abstrata? Por que
+        você utilizaria uma interface?</h4>
+    <p>Classes abstratas podem ter variáveis, métodos comuns e métodos abstratos, mas não podem ser instanciadas.
+        Interfaces a partir do Java SE 8 podem definir constantes, métodos estáticos, métodos default e métodos public
+        abstratos. Utilizamos classes abstratas quando queremos que as subclasses tenham um padrão para ser usado.
+        Utilizamos interfaces quando queremos firmar um contrato, sendo que, diversas classes que não tem relação uma
+        com a outra podem utilizar a inteface. </p>
+    <h4>10.9 (Interfaces Java SE 8) Explique como métodos default permitem adicionar novos métodos a uma interface
+        existente sem violar as
+        classes que implementaram a interface original.</h4>
+    <p>O método default já vem por padrão nas classes que implementam a interface, ou seja, não é necessário implementar
+        uma lógica nele. No entanto, é possível sobrescreve-lo. Com isso, é possível implementar métodos default sem
+        interferir nas classes que já implementam a interface.</p>
+    <h4>10.10 (Interfaces Java SE 8) O que é uma interface funcional?</h4>
+    <p>Uma interface funcional é uma interface que possui apenas um método</p>
+    <h4>10.11 (Interfaces Java SE 8) Por que é útil ser capaz de adicionar métodos static a interfaces?</h4>
+    <p>Porque agora podemos adicionar métodos auxiliares na própria interface em vez de declara-los em classes
+        diferentes.</p>
+
+</body>
+
+</html>

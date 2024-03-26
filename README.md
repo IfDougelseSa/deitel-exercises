@@ -17,3 +17,7 @@ deeper</a></p>
 herança | 
 Object Oriented Programming:
 heritage</a></p>
+<p>Capitulo 10 / Chapter 10 - <a href="https://github.com/IfDougelseSa/exercises-deitel/tree/main/chapter10">Programação orientada a objetos:
+polimorfismo e interfaces | 
+Object Oriented Programming:
+polymorphism and interfaces</a></p>
