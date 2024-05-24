@@ -21,3 +21,8 @@ heritage</a></p>
 polimorfismo e interfaces | 
 Object Oriented Programming:
 polymorphism and interfaces</a></p>
+<p>Capitulo 11 / Chapter 11 - <a href="https://github.com/IfDougelseSa/exercises-deitel/tree/main/chapter11">Tratamento de exceção: um exame
+mais profundo | 
+Exception Handling: An Examination
+deeper</a></p>
+

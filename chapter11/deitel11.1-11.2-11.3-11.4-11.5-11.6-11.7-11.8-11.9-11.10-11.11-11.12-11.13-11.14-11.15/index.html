@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Deitel 11.1 11.2 11.3 11.4 11.5 11.6 11.7 11.8 11.9 11.10 11.11 11.12 11.13 11.14 11.15</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+
+<body>
+    <h4>11.1 Liste cinco exemplos de exceções comuns.</h4>
+    <p>ArrayIndexOutOfBoundsException, IllegalArgumentException, ArithmeticException, InputMismatchException e
+        NullPointerException.</p>
+    <h4>11.2 Por que as exceções são particularmente adequadas para lidar com erros produzidos por métodos de classes na
+        Java API?</h4>
+    <p>Porque as exceções produzidas pela Java API provavelmente não vão atender todas as necessidades.</p>
+    <h4>11.3 O que é um “vazamento de recurso”?</h4>
+    <p>Um vazamento de recurso é quando um programa termina de forma inesperada e o recurso não é retornado. Por
+        exemplo, caso ocorra um erro em um programa que processa dados de um arquivo, não vai ser possível retorna o
+        recurso (caso nao tenha um tratamento adequado).</p>
+    <h4>11.4 Se nenhuma exceção é lançada em um bloco try, onde o controle prossegue quando o bloco try completa a
+        execução?</h4>
+    <p>O controle prossegue para a próxima instrução depois do bloco try.</p>
+    <h4>11.5 Dê uma vantagem fundamental de utilizar catch(Exception nomeDaExceção).</h4>
+    <p>Por ser a superclasse de todas as exceções, a Exception pode capturar qualquer exceção.</p>
+    <h4>11.6 Um aplicativo convencional deve capturar objetos Error? Explique.</h4>
+    <p>Não. Objetos Error são erros incomuns que não estão no controle do programador. Exemplo: erro de estouro de
+        memória, jvm, etc..</p>
+    <h4>11.7 O que acontece se nenhuma rotina de tratamento catch corresponder ao tipo de um objeto lançado?</h4>
+    <p>Caso o catch tenha sido chamado por outro método que possua o try-catch, o erro sera propagado para o outro
+        método. Caso seja o único catch que esteja tratando, o programa vai parar de funcionar e mostrar a exceção no
+        console.</p>
+    <h4>11.8 O que acontece se vários blocos catch correspondem ao tipo do objeto lançado?</h4>
+    <p>O primeiro catch vai capturar a exceção e tratar. Os outros não serão acionados.</p>
+    <h4>11.9 Por que um programador especificaria um tipo de superclasse como o tipo em um bloco catch?</h4>
+    <p>Para conseguir capturar todas as exceções possíveis da subclasses.</p>
+    <h4>11.10 Qual é a razão chave para utilizar blocos finally?</h4>
+    <p>Para liberar o recurso e evitar o vazamendo de recurso.</p>
+    <h4>11.11 O que acontece quando um bloco catch lança uma Exception?</h4>
+    <p>Ocorrerá o encadeamento de exceções. Sendo assim, será possível obter as informações de todas as exceções.</p>
+    <h4>11.12 O que a instrução throw referênciaDaExceção faz em um bloco catch?</h4>
+    <p>Relança a exceção.</p>
+    <h4>11.13 O que acontece com uma referência local em um bloco try quando esse bloco lança uma Exception?</h4>
+    <p>O escopo do bloco try deixa de existir e todos as instruções depois da ocorrência da exceção não vão ser
+        processadas.</p>
+    <h4>11.14 (Condições excepcionais) Liste as várias condições excepcionais que ocorreram em programas por todo este
+        livro
+        até agora. Liste o maior
+        número de condições excepcionais adicionais que você puder. Para cada uma delas, descreva brevemente como um
+        programa normalmente trataria a exceção usando as técnicas de tratamento de exceção discutidas neste capítulo.
+        Exceções típicas incluem divisão por zero
+        e índice de array fora dos limites.</h4>
+    <p>ArrayIndexOutOfBoundsException, IllegalArgumentException, ArithmeticException, InputMismatchException e
+        NullPointerException. Todas podem ser tratadas com o try catch. Se alguma parte do código possivelmente soltar
+        uma exceção, basta colocar em volta do try. Caso a exceção ocorra, poderá ser capturada e tradada no catch.</p>
+    <h4>11.15 (Exceções e falha de construtor) Até este capítulo, descobrimos que lidar com erros detectados por
+        construtores é um pouco complicado.
+        Explique por que o tratamento de exceção é um meio eficaz de lidar com falha de construtor.</h4>
+    <p>O tratamento de exceção é um meio eficaz para tratar errods detectados no construtor porque ele evita que os
+        objetos sejam inicializador de forma incorreta. Com isso, prevenindo possíveis bugs e deixando o programa mais
+        consistente.</p>
+</body>
+
+</html>
